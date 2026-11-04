@@ -1,0 +1,13 @@
+{
+  "started_at": "2026-11-03T15:42:31.925Z",
+  "model": "DeepSeek-V4.1-Flash-1017",
+  "endpoint": "https://llmapi.paratera.com/chat/completions",
+  "temperature": 0.2,
+  "max_tokens_sent": false,
+  "timeout_ms_per_request": 600000,
+  "max_calls": 2,
+  "prompt_version": "faithful-v1",
+  "extractor_sha256": "41f82a9fd46e0a113252cdf9493bdb406e390183dfd6f896b758334484247091",
+  "source_sha256": "17c1c38351f6b824034143f7dbd4fe59b86e36bb672869da12027a4d4fa7b328",
+  "note": "使用现有生产后端，没有为本样例调整提示词或修订模型结果；实际参数见本文件，可通过环境变量覆盖。"
+}

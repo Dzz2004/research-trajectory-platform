@@ -1,0 +1,49 @@
+{
+  "record_id": "ae21eee1-47f1-4d67-9fa0-68680947c432",
+  "status": "failed",
+  "elapsed_seconds": 162.24,
+  "call_count": 2,
+  "rounds": [
+    {
+      "round": 1,
+      "http_status": 200,
+      "valid": false,
+      "error": "Unexpected end of JSON input",
+      "finish_reason": "length",
+      "usage": {
+        "completion_tokens": 10000,
+        "prompt_tokens": 2559,
+        "total_tokens": 12559,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10000
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "answer_characters": 0
+    },
+    {
+      "round": 2,
+      "http_status": 200,
+      "valid": false,
+      "error": "Unexpected end of JSON input",
+      "finish_reason": "length",
+      "usage": {
+        "completion_tokens": 10000,
+        "prompt_tokens": 2600,
+        "total_tokens": 12600,
+        "completion_tokens_details": {
+          "reasoning_tokens": 10000
+        },
+        "prompt_tokens_details": {
+          "cached_tokens": 2432
+        }
+      },
+      "answer_characters": 0
+    }
+  ],
+  "node_count": 0,
+  "relation_count": 0,
+  "attempt_error": "模型输出未通过校验。已进行一次结构修复，请检查问题后重新提取。"
+}

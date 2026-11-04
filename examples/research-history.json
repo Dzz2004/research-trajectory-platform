@@ -1,0 +1,204 @@
+{
+  "id": "history",
+  "name": "从文献到孔壁方案",
+  "description": "有行动、有明确先后；结果保留未知。",
+  "content": "目标是提出改善近红外利用的构型；要求保留连续 CdS 保护和开放孔道。\n研究者已固定采用 Au。我们先查阅文献，关注作用距离；总结中未记录具体文献和参数。\n之后我们比较新增辅助组分与复用孔壁。考虑利用已有结构控制位置，先选择孔壁路线，固定能力仍待验证。\n最终提出 Au 均匀附着孔壁的构型方案，尚未开展实验。",
+  "trajectory": {
+    "title": "Au 孔壁构型方案的形成",
+    "inputs": {
+      "goals": [
+        {
+          "id": "I1",
+          "content": "提出改善近红外利用的构型",
+          "provenance": {
+            "origin": "source_explicit",
+            "source_refs": [
+              {
+                "start_line": 1,
+                "end_line": 1,
+                "quote": "目标是提出改善近红外利用的构型"
+              }
+            ],
+            "note": null
+          }
+        }
+      ],
+      "constraints": [
+        {
+          "id": "I2",
+          "content": "保留连续 CdS 保护和开放孔道",
+          "provenance": {
+            "origin": "source_explicit",
+            "source_refs": [
+              {
+                "start_line": 1,
+                "end_line": 1,
+                "quote": "要求保留连续 CdS 保护和开放孔道"
+              }
+            ],
+            "note": null
+          }
+        }
+      ],
+      "background": [],
+      "human_choices": [
+        {
+          "id": "I3",
+          "content": "Au 为研究者指定材料",
+          "provenance": {
+            "origin": "source_explicit",
+            "source_refs": [
+              {
+                "start_line": 2,
+                "end_line": 2,
+                "quote": "研究者已固定采用 Au"
+              }
+            ],
+            "note": null
+          }
+        }
+      ]
+    },
+    "nodes": [
+      {
+        "id": "N1",
+        "kind": "action",
+        "title": "查阅作用距离相关文献",
+        "content": "查阅文献并关注作用距离，具体来源及参数未记录。",
+        "actor": "我们",
+        "occurrence": "reported",
+        "known_before_ids": null,
+        "provenance": {
+          "origin": "source_explicit",
+          "source_refs": [
+            {
+              "start_line": 2,
+              "end_line": 2,
+              "quote": "我们先查阅文献，关注作用距离；总结中未记录具体文献和参数。"
+            }
+          ],
+          "note": null
+        },
+        "reasoning": null,
+        "action": {
+          "category": "literature_search",
+          "operation": "查阅文献，关注作用距离",
+          "target": "Au 构型的作用距离",
+          "parameters": null,
+          "result": null,
+          "interpretation": null
+        }
+      },
+      {
+        "id": "N2",
+        "kind": "reasoning",
+        "title": "比较并暂选孔壁路线",
+        "content": "比较新增辅助组分与复用孔壁，基于利用已有结构控制位置的考虑，暂选孔壁路线；固定能力仍待验证。",
+        "actor": "我们",
+        "occurrence": "reported",
+        "known_before_ids": null,
+        "provenance": {
+          "origin": "source_explicit",
+          "source_refs": [
+            {
+              "start_line": 3,
+              "end_line": 3,
+              "quote": "之后我们比较新增辅助组分与复用孔壁。考虑利用已有结构控制位置，先选择孔壁路线，固定能力仍待验证。"
+            }
+          ],
+          "note": null
+        },
+        "reasoning": {
+          "question": null,
+          "alternatives": [
+            {
+              "option": "新增辅助组分",
+              "tradeoff": null
+            },
+            {
+              "option": "复用孔壁",
+              "tradeoff": "期望利用已有结构控制位置，但固定能力仍待验证"
+            }
+          ],
+          "decision": "暂选孔壁路线",
+          "basis": "考虑利用已有结构控制位置，未证明固定能力"
+        },
+        "action": null
+      }
+    ],
+    "relations": [
+      {
+        "id": "E1",
+        "from": "N1",
+        "to": "N2",
+        "kind": "precedes",
+        "scope": "reported",
+        "provenance": {
+          "origin": "source_explicit",
+          "source_refs": [
+            {
+              "start_line": 2,
+              "end_line": 3,
+              "quote": "我们先查阅文献，关注作用距离；总结中未记录具体文献和参数。\n之后我们比较新增辅助组分与复用孔壁。"
+            }
+          ],
+          "note": null
+        }
+      },
+      {
+        "id": "E2",
+        "from": "N2",
+        "to": "O1",
+        "kind": "supports",
+        "scope": "unknown",
+        "provenance": {
+          "origin": "source_explicit",
+          "source_refs": [
+            {
+              "start_line": 3,
+              "end_line": 4,
+              "quote": "先选择孔壁路线，固定能力仍待验证。\n最终提出 Au 均匀附着孔壁的构型方案，尚未开展实验。"
+            }
+          ],
+          "note": null
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "id": "O1",
+        "type": "scheme",
+        "content": "Au 均匀附着孔壁的构型方案，尚未开展实验",
+        "status": "proposed",
+        "provenance": {
+          "origin": "source_explicit",
+          "source_refs": [
+            {
+              "start_line": 4,
+              "end_line": 4,
+              "quote": "最终提出 Au 均匀附着孔壁的构型方案，尚未开展实验。"
+            }
+          ],
+          "note": null
+        }
+      }
+    ],
+    "gaps": [
+      {
+        "id": "G1",
+        "question": "查阅了哪些文献，得到了什么具体信息？",
+        "related_ids": [
+          "N1"
+        ]
+      },
+      {
+        "id": "G2",
+        "question": "已有孔壁承担固定功能的依据是什么？",
+        "related_ids": [
+          "N2",
+          "O1"
+        ]
+      }
+    ]
+  }
+}
